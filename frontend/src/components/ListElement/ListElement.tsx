@@ -11,30 +11,60 @@ const ListElement = ({
 	semester,
 	isOnline,
 }: ListElementViewmodel) => {
-	return (
-		<aside className="grid grid-cols-12 gap-4 p-4 rounded-md shadow-md bg-zinc-200 text-neutral-800">
-			<div className="col-span-8">
-				<div className="flex gap-2 text-sm">
-					<span>{theme} </span>
-					&#x2022;
-					<span>{semester} </span>
-					&#x2022;
-					{isOnline ? <span>Online</span> : <span>Fysisk</span>}
-				</div>
-				<div className="flex justify-between font-bold h2">{name}</div>
-				<Balanced>{description}</Balanced>
-			</div>
-			<span className="col-span-2 col-start-9 text-sm font-normal truncate">
-				kl: {timeEpoch.toString()}
-			</span>
+	const convertEpoch = (createdAt: number) => {
+		let month = [
+			"January",
+			"February",
+			"March",
+			"April",
+			"May",
+			"June",
+			"Juli",
+			"August",
+			"September",
+			"October",
+			"November",
+			"December",
+		];
+		let date = new Date(0);
+		date.setUTCSeconds(createdAt);
+		let ss = date.getSeconds();
+		let mm = date.getMinutes();
+		let hh = date.getHours();
+		let dd = date.getDate();
+		let MM = month[date.getMonth()];
+		return `${dd}. ${MM} kl: ${hh}:${mm.toString().length == 1 ? "0" + mm : mm}`;
+	};
 
-			<div className="flex flex-col col-span-2 col-start-11 gap-2 justify-self-end">
-				<Button className="self-start" variant="">
-					Fjern
-				</Button>
-				<Button className="self-start" variant="">
-					Done
-				</Button>
+	convertEpoch(+timeEpoch);
+
+	return (
+		<aside className="flex flex-col p-4 rounded-md shadow-md bg-zinc-200 text-neutral-800">
+			<div className="col-start-1 col-end-9">
+				<div className="flex justify-between gap-2 text-sm">
+					<div className="flex justify-between gap-2 ">
+						<span>{theme} </span>
+						&#x2022;
+						<span>{semester} </span>
+						&#x2022;
+						{isOnline ? <span>Online</span> : <span>Fysisk</span>}
+					</div>
+					<span className="">{convertEpoch(+timeEpoch)}</span>
+				</div>
+			</div>
+			<div className="flex justify-between ">
+				<div className="flex flex-col justify-between ">
+					<span className="font-bold h2 "> {name}</span>
+					<Balanced>{description}</Balanced>
+				</div>
+				<div className="flex flex-col justify-end col-span-1 col-start-12 gap-2 justify-self-end">
+					<Button className="self-start" variant="">
+						Fjern
+					</Button>
+					<Button className="self-start" variant="">
+						Done
+					</Button>
+				</div>
 			</div>
 		</aside>
 	);

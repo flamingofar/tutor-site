@@ -1,9 +1,12 @@
 import { ListViewmodel } from "./ListViewmodel";
 
 export const listMock: ListViewmodel = {
-	title: "Velkommen til",
-	description:
-		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos incidunt vel quod minus voluptatum soluta ea ullam praesentium maxime?",
+	titleAndDescription: {
+		title: "Velkommen til",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos incidunt vel quod minus voluptatum soluta ea ullam praesentium maxime?",
+	},
+
 	entries: [
 		{
 			id: "123",

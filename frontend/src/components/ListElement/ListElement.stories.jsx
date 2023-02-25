@@ -1,5 +1,6 @@
 import React from "react";
 import ListElement from "./ListElement";
+import { listElementMock } from "./listElement.mock";
 
 export default {
 	component: ListElement,
@@ -13,12 +14,5 @@ export default {
 };
 
 export const Default = {
-	args: {
-		name: "Malte Skjoldager",
-		timeEpoch: "1677340937",
-		theme: "HTML",
-		semester: "2.",
-		description:
-			"Bacon ipsum dolor amet meatball ham pork belly, brisket sirloin picanha cupim. Pork loin strip steak drumstick ham hock chicken sausage ground",
-	},
+	args: listElementMock,
 };
