@@ -58,12 +58,8 @@ const ListElement = ({
 					<Balanced>{description}</Balanced>
 				</div>
 				<div className="flex flex-col justify-end col-span-1 col-start-12 gap-2 justify-self-end">
-					<Button className="self-start" variant="">
-						Fjern
-					</Button>
-					<Button className="self-start" variant="">
-						Done
-					</Button>
+					<Button className="self-start">Fjern</Button>
+					<Button className="self-start">Done</Button>
 				</div>
 			</div>
 		</aside>
