@@ -49,6 +49,9 @@
   "lint-staged": {
     "*.{ts,tsx,js,jsx,json,css,md,mdx,yml}": [
       "prettier --write"
+    ],
+    "src/**/*.{js,tsx,ts}": [
+      "eslint --max-warnings=0 --fix"
     ]
   },
   "simple-git-hooks": {
