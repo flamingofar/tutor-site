@@ -26,7 +26,7 @@ const ListElement = ({
       "November",
       "December",
     ];
-    let date = new Date(0);
+    const date = new Date(0);
     date.setUTCSeconds(createdAt);
     const ss = date.getSeconds();
     const mm = date.getMinutes();
