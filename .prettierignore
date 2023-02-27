@@ -1,0 +1,10 @@
+node_modules
+.idea
+.vscode
+dist
+assets
+public
+*.hbs
+.yarn
+coverage
+docs/styleguide/tailwind-theme.json
