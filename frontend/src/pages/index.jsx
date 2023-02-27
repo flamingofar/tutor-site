@@ -14,9 +14,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className="flex flex-col items-center justify-center h-screen">
+        <h1 className="text-5xl">Tutor help</h1>
         <section>
-          Her skal forsiden være!
+          <p>Velkommen til forsiden</p>
         </section>
       </main>
     </>
