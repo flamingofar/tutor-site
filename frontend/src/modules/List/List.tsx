@@ -1,7 +1,6 @@
-import React from "react";
-import ListElement from "../../components/ListElement/ListElement";
-import TitleAndDescription from "../../components/TitleAndDescription/TitleAndDescription";
-import { ListViewmodel } from "./ListViewmodel";
+import ListElement from '../../components/ListElement/ListElement';
+import TitleAndDescription from '../../components/TitleAndDescription/TitleAndDescription';
+import { ListViewmodel } from './ListViewmodel';
 
 const List = ({ entries, titleAndDescription }: ListViewmodel) => {
   return (
