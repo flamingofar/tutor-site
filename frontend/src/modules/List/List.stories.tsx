@@ -1,5 +1,8 @@
 import List from './List';
+import { StoryObj, Meta } from '@storybook/react';
 import { listMock } from './list.mock';
+
+type Story = StoryObj<typeof List>;
 
 export default {
   component: List,
@@ -10,8 +13,8 @@ export default {
       </div>
     </div>
   ),
-};
+} as Meta<typeof List>;
 
-export const Primary = {
+export const Default: Story = {
   args: listMock,
 };

@@ -1,15 +1,8 @@
 import React from 'react';
-import clsx from 'clsx';
-import { ButtonViewmodel } from './ButtonViewmodel';
+import { ButtonViewModel } from './ButtonViewModel';
 
-const Button = ({ children, className }: ButtonViewmodel) => {
-  return (
-    <button
-      className={clsx('bg-neutral-400 rounded-sm px-2 py-0.5', className)}
-    >
-      {children}
-    </button>
-  );
+const Button = ({}: ButtonViewModel) => {
+  return <div>Button ready</div>;
 };
 
 export default Button;
