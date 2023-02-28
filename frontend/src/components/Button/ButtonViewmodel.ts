@@ -1,1 +1,3 @@
-export interface ButtonViewModel {}
+export interface ButtonViewModel {
+  className?: string;
+}

@@ -8,7 +8,7 @@ export default {
   component: Footer,
   render: (args) => (
     <div className="w-full h-screen bg-slate-200">
-      <div className="w-2/3 p-5 ">
+      <div className="p-5 ">
         <Footer {...args} />
       </div>
     </div>
