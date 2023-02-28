@@ -1,4 +1,9 @@
-export default {
+module.exports = {
+  extends: [
+    'next',
+    'plugin:storybook/recommended',
+    'plugin:tailwindcss/recommended',
+  ],
   env: {
     browser: true,
     es2021: true,
@@ -9,11 +14,15 @@ export default {
     'plugin:@typescript-eslint/recommended',
   ],
   overrides: [],
-  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
+    parser: '@typescript-eslint/parser',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
+
   plugins: ['react', '@typescript-eslint'],
   rules: {
     // suppress errors for missing 'import React' in files

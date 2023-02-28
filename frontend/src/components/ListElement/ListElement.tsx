@@ -1,4 +1,3 @@
-import React from 'react';
 import Balanced from 'react-wrap-balancer';
 import Button from '../Button/Button';
 import { ListElementViewmodel } from './ListElementViewmodel';
@@ -28,7 +27,6 @@ const ListElement = ({
     ];
     const date = new Date(0);
     date.setUTCSeconds(createdAt);
-    const ss = date.getSeconds();
     const mm = date.getMinutes();
     const hh = date.getHours();
     const dd = date.getDate();

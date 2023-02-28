@@ -1,1 +1,3 @@
-export interface FooterViewModel {}
+export interface FooterViewModel {
+  title?: string;
+}

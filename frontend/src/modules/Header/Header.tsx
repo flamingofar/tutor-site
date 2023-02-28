@@ -4,10 +4,11 @@ import logo from '/public/tutor_help_logo.jpg';
 
 import { HeaderViewModel } from './HeaderViewModel';
 
-const Header = ({}: HeaderViewModel) => {
+const Header = ({ title }: HeaderViewModel) => {
   return (
     <header className="sticky top-0 p-4 bg-primary-list">
       <a href="/">
+        {title}
         <Image
           src={logo}
           alt="tutor_help_logo"

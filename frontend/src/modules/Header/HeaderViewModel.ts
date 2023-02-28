@@ -1,1 +1,3 @@
-export interface HeaderViewModel {}
+export interface HeaderViewModel {
+  title?: string;
+}

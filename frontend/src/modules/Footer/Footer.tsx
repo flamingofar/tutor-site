@@ -2,12 +2,13 @@ import React from 'react';
 import { FooterViewModel } from './FooterViewModel';
 import Link from 'next/link';
 
-const Footer = ({}: FooterViewModel) => {
+const Footer = (props: FooterViewModel) => {
+  const { title } = props;
   return (
     <footer className="flex flex-col gap-8 p-4 bg-primary-list">
       <section className="flex justify-evenly">
         <div className="flex flex-col">
-          <h3 className="mb-4 text-2xl">Hjælp til selvhjælp</h3>
+          <h3 className="mb-4 text-2xl">Hjælp til selvhjælp {title}</h3>
           <ul className="[&>li]:underline">
             <li>
               <Link href="https://developer.mozilla.org/en-US/">
