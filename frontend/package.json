@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "@next/font": "13.1.6",
+    "eslint-config-next": "^13.2.2",
+    "eslint-plugin-tailwindcss": "^3.10.0",
     "lint-staged": "^13.1.2",
     "next": "13.1.6",
     "react": "^18.2.0",
@@ -40,6 +42,8 @@
     "babel-loader": "^8.3.0",
     "clsx": "^1.2.1",
     "eslint": "^8.35.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "husky": "^8.0.0",
     "plop": "^3.1.2",

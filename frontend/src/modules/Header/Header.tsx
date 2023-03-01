@@ -3,11 +3,12 @@ import Image from 'next/image';
 import logo from '/public/tutor_help_logo.jpg';
 
 import { HeaderViewModel } from './HeaderViewModel';
+import Link from 'next/link';
 
 const Header = ({ title }: HeaderViewModel) => {
   return (
     <header className="sticky top-0 p-4 bg-primary-list">
-      <a href="/">
+      <Link href="/">
         {title}
         <Image
           src={logo}
@@ -16,7 +17,7 @@ const Header = ({ title }: HeaderViewModel) => {
           height={60}
           priority
         />
-      </a>
+      </Link>
     </header>
   );
 };

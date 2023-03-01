@@ -12,6 +12,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'next',
   ],
   overrides: [],
   parserOptions: {
@@ -23,9 +24,15 @@ module.exports = {
     },
   },
 
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'import', 'jsx-a11y', 'tailwindcss'],
   rules: {
     // suppress errors for missing 'import React' in files
     'react/react-in-jsx-scope': 'off',
+    'import/first': 'error',
+    'import/no-amd': 'error',
+    'import/no-webpack-loader-syntax': 'error',
+    'no-unused-vars': 'error',
+    'jsx-props-no-spreading': 'off',
+    'import/no-anonymous-default-export': 'off',
   },
 };
