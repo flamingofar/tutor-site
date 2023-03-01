@@ -1,6 +1,6 @@
-import { Html, Head, Main, NextScript } from 'next/document'
-import { Header } from "../modules/Header/Header";
-import { Footer } from "../modules/Footer/Footer"
+import { Html, Head, Main, NextScript } from 'next/document';
+import Header from '../modules/Header/Header';
+import Footer from '../modules/Footer/Footer';
 
 export default function Document() {
   return (
@@ -13,5 +13,5 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
