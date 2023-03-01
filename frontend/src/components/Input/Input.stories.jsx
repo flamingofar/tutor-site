@@ -1,19 +1,18 @@
 // Button.stories.js|jsx
 
-import React from "react";
-import Balancer from "react-wrap-balancer";
+import React from 'react';
 
-import Input from "./Input";
+import Input from './Input';
 
 export default {
-	component: Input,
-	render: (args) => (
-		<div className=" p-5">
-			<Input {...args} />
-		</div>
-	),
+  component: Input,
+  render: (args) => (
+    <div className="p-5 ">
+      <Input {...args} />
+    </div>
+  ),
 };
 
 export const Default = {
-	args: {},
+  args: {},
 };

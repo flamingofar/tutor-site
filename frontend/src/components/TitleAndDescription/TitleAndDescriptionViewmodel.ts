@@ -1,4 +1,4 @@
 export interface TitleAndDescriptionViewmodel {
-	title?: String;
-	description?: String;
+  title?: string;
+  description?: string;
 }

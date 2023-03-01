@@ -1,7 +1,5 @@
-import React from "react";
-import Balanced from "react-wrap-balancer";
-import Button from "../Button/Button";
-import { ListElementViewmodel } from "./ListElementViewmodel";
+import Balanced from 'react-wrap-balancer';
+import { ListElementViewmodel } from './ListElementViewmodel';
 
 const ListElement = ({
   name,
@@ -13,28 +11,27 @@ const ListElement = ({
 }: ListElementViewmodel) => {
   const convertEpoch = (createdAt: number) => {
     const month = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "Juli",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'Juli',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
     ];
     const date = new Date(0);
     date.setUTCSeconds(createdAt);
-    const ss = date.getSeconds();
     const mm = date.getMinutes();
     const hh = date.getHours();
     const dd = date.getDate();
     const MM = month[date.getMonth()];
     return `${dd}. ${MM} kl: ${hh}:${
-      mm.toString().length == 1 ? "0" + mm : mm
+      mm.toString().length == 1 ? '0' + mm : mm
     }`;
   };
 
@@ -60,8 +57,8 @@ const ListElement = ({
           <Balanced>{description}</Balanced>
         </div>
         <div className="flex flex-col justify-end col-span-1 col-start-12 gap-2 justify-self-end">
-          <Button className="self-start">Fjern</Button>
-          <Button className="self-start">Done</Button>
+          {/* <Button className="self-start">Fjern</Button>
+          <Button className="self-start">Done</Button> */}
         </div>
       </div>
     </aside>

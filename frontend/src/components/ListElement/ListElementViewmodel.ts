@@ -1,5 +1,5 @@
-import { SemesterViewmodel } from "../../viewmodels/SemesterViewmodel";
-import { ThemeViewmodel } from "../../viewmodels/ThemeViewmodel";
+import { SemesterViewmodel } from '../../viewmodels/SemesterViewmodel';
+import { ThemeViewmodel } from '../../viewmodels/ThemeViewmodel';
 
 export interface ListElementViewmodel {
   id?: string;

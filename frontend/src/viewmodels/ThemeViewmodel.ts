@@ -1,1 +1,1 @@
-export type ThemeViewmodel = "HTML" | "CSS" | "JavaScript" | "Andet";
+export type ThemeViewmodel = 'HTML' | 'CSS' | 'JavaScript' | 'Andet';

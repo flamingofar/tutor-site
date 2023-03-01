@@ -1,7 +1,7 @@
-import { ListElementViewmodel } from "../../components/ListElement/ListElementViewmodel";
-import { TitleAndDescriptionViewmodel } from "../../components/TitleAndDescription/TitleAndDescriptionViewmodel";
+import { ListElementViewmodel } from '../../components/ListElement/ListElementViewmodel';
+import { TitleAndDescriptionViewmodel } from '../../components/TitleAndDescription/TitleAndDescriptionViewmodel';
 
 export interface ListViewmodel {
-	titleAndDescription?: TitleAndDescriptionViewmodel;
-	entries?: ListElementViewmodel[];
+  titleAndDescription?: TitleAndDescriptionViewmodel;
+  entries?: ListElementViewmodel[];
 }
