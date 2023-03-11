@@ -1,9 +1,4 @@
 module.exports = {
-  extends: [
-    'next',
-    'plugin:storybook/recommended',
-    'plugin:tailwindcss/recommended',
-  ],
   env: {
     browser: true,
     es2021: true,
@@ -12,6 +7,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:tailwindcss/recommended',
+    'plugin:storybook/recommended',
     'next',
   ],
   overrides: [],
@@ -34,5 +31,6 @@ module.exports = {
     'no-unused-vars': 'error',
     'jsx-props-no-spreading': 'off',
     'import/no-anonymous-default-export': 'off',
+    'no-empty-pattern': 'off',
   },
 };
