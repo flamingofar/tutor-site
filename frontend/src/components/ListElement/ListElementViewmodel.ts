@@ -9,4 +9,5 @@ export interface ListElementViewmodel {
   theme: ThemeViewmodel;
   timeEpoch: number;
   semester: SemesterViewmodel;
+  index?: number;
 }

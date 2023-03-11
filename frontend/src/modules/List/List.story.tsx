@@ -7,8 +7,8 @@ type Story = StoryObj<typeof List>;
 export default {
   component: List,
   render: (args) => (
-    <div className="w-full h-screen bg-slate-200">
-      <div className="py-5 bg-white">
+    <div className="w-full h-fit bg-primary-list">
+      <div className="py-5 ">
         <List {...args} />
       </div>
     </div>
