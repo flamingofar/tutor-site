@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .border-theme {
+    @apply border-primary-border border-black rounded-md;
+  }
+}
+
 @layer components {
   .h1 {
     @apply text-3xl;
