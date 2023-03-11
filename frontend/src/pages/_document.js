@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body>
+      <body className="flex flex-col min-h-screen">
         <Header />
         <Main />
         <Footer />

@@ -9,7 +9,7 @@ const List = ({ entries, titleAndDescription }: ListViewmodel) => {
       <ul className="flex flex-col gap-4 ">
         {entries &&
           entries.map((entry, idx) => {
-            return <ListElement key={idx} {...entry} />;
+            return <ListElement key={idx} index={idx} {...entry} />;
           })}
       </ul>
     </section>

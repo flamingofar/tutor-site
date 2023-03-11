@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Footer = (props: FooterViewModel) => {
   const { title } = props;
   return (
-    <footer className="flex flex-col gap-8 p-4 bg-primary-list">
+    <footer className="flex flex-col gap-8 p-4 mt-auto bg-primary-list">
       <section className="flex justify-evenly">
         <div className="flex flex-col">
           <h3 className="mb-4 text-2xl">Hjælp til selvhjælp {title}</h3>

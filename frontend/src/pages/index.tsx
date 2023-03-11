@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import List from '../modules/List/List';
+import { listMock } from '../modules/List/list.mock';
 // import { Inter } from '@next/font/google';
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -12,11 +14,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col items-center justify-center h-screen">
+      <main className="flex flex-col items-center justify-center ">
         <h1 className="text-5xl">Tutor help</h1>
-        <section>
-          <p>Velkommen til forsiden</p>
-        </section>
+        <List
+          entries={listMock.entries}
+          titleAndDescription={{
+            title: listMock?.titleAndDescription?.title,
+            description: listMock.titleAndDescription?.description,
+          }}
+        />
       </main>
     </>
   );

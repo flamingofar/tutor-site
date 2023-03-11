@@ -37,7 +37,7 @@ export const plopComponentConfig = {
     actions.push({
       type: 'add',
       path: path.join(relativePath, `${properCaseName}.story.tsx`),
-      templateFile: './component/stories.tsx.hbs',
+      templateFile: './component/story.tsx.hbs',
       abortOnFail: true,
       data: sharedData,
     });
